@@ -1,0 +1,13 @@
+kind : Pod
+apiVersion: v1
+
+metadata:
+  name: django-pod
+  namespace: django
+
+spec:
+  containers:
+  - name: django-container
+    image: gopesh13/django-notes-app
+    ports:
+    - containerPort: 8000
